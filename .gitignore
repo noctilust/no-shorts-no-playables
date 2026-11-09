@@ -1,0 +1,8 @@
+# Chrome-generated: indexed static DNR rulesets are rebuilt on every load.
+_metadata/
+
+# Chrome packaging artifacts
+*.crx
+*.pem
+
+.DS_Store

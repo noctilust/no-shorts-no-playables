@@ -1,0 +1,42 @@
+/* Shorts surfaces */
+ytd-reel-shelf-renderer,
+ytd-rich-shelf-renderer[is-shorts],
+ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]),
+grid-shelf-view-model:has(a[href^="/shorts/"]),
+ytm-shorts-lockup-view-model,
+ytd-reel-item-renderer,
+ytd-rich-item-renderer:has(a[href^="/shorts/"]),
+ytd-video-renderer:has(a[href^="/shorts/"]),
+ytd-compact-video-renderer:has(a[href^="/shorts/"]),
+ytd-grid-video-renderer:has(a[href^="/shorts/"]),
+ytd-playlist-video-renderer:has(a[href^="/shorts/"]),
+ytd-playlist-panel-video-renderer:has(a[href^="/shorts/"]),
+yt-lockup-view-model:has(a[href^="/shorts/"]),
+ytd-guide-entry-renderer:has(a[title="Shorts"]),
+ytd-guide-entry-renderer:has(a[href^="/shorts/"]),
+ytd-mini-guide-entry-renderer:has(a[title="Shorts"]),
+ytd-mini-guide-entry-renderer:has(a[href^="/shorts/"]),
+yt-tab-shape[tab-title="Shorts"],
+tp-yt-paper-tab[tab-title="Shorts"] {
+  display: none !important;
+}
+
+/* Playables surfaces */
+ytd-mini-game-card-view-model,
+ytd-rich-item-renderer:has(ytd-mini-game-card-view-model),
+ytd-rich-shelf-renderer:has(a[href^="/playables"]),
+ytd-rich-section-renderer:has(ytd-rich-shelf-renderer a[href^="/playables"]),
+grid-shelf-view-model:has(a[href^="/playables"]),
+ytd-guide-entry-renderer:has(a[href^="/playables"]),
+ytd-guide-entry-renderer:has(a[title="Playables"]),
+ytd-mini-guide-entry-renderer:has(a[href^="/playables"]),
+ytd-mini-guide-entry-renderer:has(a[title="Playables"]),
+yt-tab-shape[tab-title="Playables"],
+tp-yt-paper-tab[tab-title="Playables"] {
+  display: none !important;
+}
+
+/* Text-matched chips marked by content.js */
+[data-nsnp-hidden] {
+  display: none !important;
+}

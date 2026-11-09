@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "No Shorts, No Playables",
+  "version": "1.0.0",
+  "description": "Blocks YouTube Shorts and YouTube Playables across feeds, search, channels, and direct URLs.",
+  "minimum_chrome_version": "105",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["*://www.youtube.com/*"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "youtube_block",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}
